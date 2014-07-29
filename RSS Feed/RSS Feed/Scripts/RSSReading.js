@@ -201,7 +201,8 @@ function RSSReader()
         dialogDiv.setAttribute("title", "Which feed would you like to remove?");// set the title accordingly
         dialogDiv.innerHTML = selectorHTML;				// set the inner HTML of this div
         document.body.appendChild(dialogDiv);			// append the div to the body
-        $("#RSSSelector").dialog({ width: "325px", modal: true, resizable: false});
+
+        $("#RSSSelector").dialog({ width: 325, modal: true, resizable: false});
         $("#RSSSelectorOkay").click(okayButton);
         $("#RSSSelectorCancel").click(cancelButton);
         $("#RSSSelector").on("dialogclose", cancelButton);

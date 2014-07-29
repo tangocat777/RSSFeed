@@ -12,25 +12,28 @@
     <meta name="viewport" content="width=device-width" />
     <title>Application</title>
     <style>
-        thead {
+        table.tablesorter thead {
             display: block;
             width: 100%;
             border: 1px solid #000000;
             overflow:auto;
         }
-        thead th {
-            width:260px;
+        table.tablesorter thead th {
+            width:280px;
         }
-        tbody.scroll {
+        table.tablesorter tbody.scroll {
             width:250px;
             display: block;
             height: 600px;
             width: 100%;
             overflow:auto;
         }
-        tbody td {
-            width:260px;
+        table.tablesorter tbody td {
+            display: inline-block;
+            width:280px;
             word-wrap:break-word;
+            height: 50px;
+            overflow:hidden;
         }
 
         .ui-selectee {
